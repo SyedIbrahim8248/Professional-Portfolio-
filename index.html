@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +21,9 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#07111f;
-    color:#ffffff;
+    color:white;
     line-height:1.6;
 }
 
@@ -34,69 +35,6 @@ a{
 img{
     max-width:100%;
 }
-
-/* =========================
-   NAVBAR
-========================= */
-
-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(7,17,31,0.96);
-    border-bottom:1px solid #24364d;
-}
-
-.nav-container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-
-    min-height:70px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:25px;
-    font-weight:bold;
-}
-
-.logo span{
-    color:#00d9ff;
-}
-
-.nav-links{
-    display:flex;
-    gap:20px;
-    list-style:none;
-}
-
-.nav-links a{
-    color:#ffffff;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#00d9ff;
-}
-
-.menu-btn{
-    display:none;
-    background:#14263d;
-    border:1px solid #34506e;
-    color:white;
-    padding:8px 12px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-/* =========================
-   COMMON
-========================= */
 
 .container{
     width:92%;
@@ -136,6 +74,7 @@ h2{
 .btn{
     display:inline-block;
     padding:11px 17px;
+    margin:4px;
     border-radius:9px;
     border:1px solid #3a526e;
     background:#10243c;
@@ -155,6 +94,64 @@ h2{
 }
 
 /* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(7,17,31,.97);
+    border-bottom:1px solid #24364d;
+}
+
+.nav-container{
+    width:92%;
+    max-width:1200px;
+    min-height:70px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#00d9ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00d9ff;
+}
+
+.menu-btn{
+    display:none;
+    background:#14263d;
+    border:1px solid #34506e;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* =========================
    HERO
 ========================= */
 
@@ -170,26 +167,18 @@ h2{
 
 .badge{
     display:inline-block;
-
     padding:7px 14px;
-
     border-radius:30px;
-
     color:#8ff5ff;
-
     background:#0c2938;
-
     border:1px solid #1b6575;
-
     font-size:13px;
-
     font-weight:bold;
 }
 
 .hero h1{
     font-size:clamp(42px,7vw,75px);
     line-height:1.05;
-
     margin:18px 0;
 }
 
@@ -210,19 +199,15 @@ h2{
 .hero-buttons{
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
-
+    gap:5px;
     margin-top:25px;
 }
 
 .profile-photo{
     width:350px;
     max-width:100%;
-
     margin:auto;
-
     padding:8px;
-
     border-radius:25px;
 
     background:linear-gradient(
@@ -236,12 +221,9 @@ h2{
 .profile-photo img{
     width:100%;
     height:400px;
-
     object-fit:cover;
     object-position:center top;
-
     border-radius:19px;
-
     display:block;
 }
 
@@ -259,7 +241,6 @@ h2{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:12px;
-
     margin-top:25px;
 }
 
@@ -287,11 +268,8 @@ h2{
 .skill{
     background:#112b46;
     border:1px solid #285577;
-
     padding:9px 14px;
-
     border-radius:30px;
-
     font-weight:bold;
     font-size:14px;
 }
@@ -310,39 +288,27 @@ h2{
 ========================= */
 
 .project-tools{
-    display:flex;
-    gap:10px;
     margin-bottom:25px;
 }
 
 .project-tools input{
     width:100%;
-
     padding:13px;
-
     border-radius:9px;
-
     border:1px solid #344b67;
-
     background:#0d1c2e;
-
     color:white;
-
     outline:none;
 }
 
 .projects{
     display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:18px;
 }
 
 .project-card{
     min-height:270px;
-
     display:flex;
     flex-direction:column;
 }
@@ -358,7 +324,6 @@ h2{
 .project-card p{
     color:#a8b8cc;
     font-size:14px;
-
     flex:1;
 }
 
@@ -378,39 +343,46 @@ h2{
 }
 
 /* =========================
-   CERTIFICATE
+   CERTIFICATES
 ========================= */
 
 .certificate-box{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:25px;
-
     align-items:center;
+    margin-bottom:35px;
 }
 
 .certificate-placeholder{
     min-height:350px;
-
-    background:#ffffff;
-
+    background:white;
     color:#222;
-
-    border-radius:12px;
-
+    border-radius:15px;
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     justify-content:center;
-
     text-align:center;
-
     padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.certificate-placeholder h1{
+    font-size:60px;
+}
+
+.certificate-placeholder h3{
+    font-size:25px;
+}
+
+.certificate-note{
+    margin-top:15px;
+    text-align:center;
+}
+
+.certificate-note code{
+    color:#00d9ff;
 }
 
 /* =========================
@@ -419,23 +391,16 @@ h2{
 
 .contact-grid{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:20px;
 }
 
 .contact-link{
     display:block;
-
     background:#12253b;
-
     padding:14px;
-
     margin:9px 0;
-
     border-radius:10px;
-
     transition:.3s;
 }
 
@@ -450,11 +415,8 @@ h2{
 
 footer{
     text-align:center;
-
     padding:30px;
-
     border-top:1px solid #24364d;
-
     color:#94a8c0;
 }
 
@@ -464,126 +426,82 @@ footer{
 
 .modal{
     display:none;
-
     position:fixed;
-
     inset:0;
-
-    background:rgba(0,0,0,.8);
-
+    background:rgba(0,0,0,.85);
     z-index:5000;
-
     align-items:center;
-
     justify-content:center;
-
     padding:15px;
 }
 
 .modal-box{
     width:min(650px,95%);
-
     max-height:90vh;
-
     overflow:auto;
-
     background:#0b192b;
-
     border:1px solid #39526d;
-
     border-radius:18px;
-
     padding:25px;
 }
 
 .modal-header{
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     margin-bottom:20px;
 }
 
 .close{
     background:#14263d;
-
     color:white;
-
     border:1px solid #40546c;
-
     padding:6px 10px;
-
     border-radius:7px;
-
     cursor:pointer;
 }
 
-/* =========================
-   DEMOS
-========================= */
-
 .demo{
     background:#02070d;
-
     padding:20px;
-
     border-radius:12px;
 }
 
 .demo input{
     width:100%;
-
     padding:10px;
-
     margin:7px 0;
-
     background:#0c1a2c;
-
     border:1px solid #344b67;
-
     color:white;
-
     border-radius:7px;
 }
 
 .demo button{
     padding:9px 13px;
-
     margin:4px;
-
     border:0;
-
     border-radius:7px;
-
     background:#2878ff;
-
     color:white;
-
     cursor:pointer;
 }
 
-/* TIC TAC TOE */
+/* =========================
+   TIC TAC TOE
+========================= */
 
 .ttt-board{
     display:grid;
-
-    grid-template-columns:
-    repeat(3,80px);
-
+    grid-template-columns:repeat(3,80px);
     gap:6px;
-
     justify-content:center;
-
     margin:20px;
 }
 
 .ttt-board button{
     height:80px;
-
     font-size:28px;
-
     background:#142d48;
 }
 
@@ -605,29 +523,20 @@ footer{
     }
 
     .projects{
-        grid-template-columns:
-        repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
-
 }
 
 @media(max-width:650px){
 
     .nav-links{
         display:none;
-
         position:absolute;
-
         top:70px;
-
         left:0;
-
         right:0;
-
         background:#07111f;
-
         flex-direction:column;
-
         padding:20px;
     }
 
@@ -674,9 +583,7 @@ footer{
 Syed<span>Ibrahim</span>
 </a>
 
-<button class="menu-btn" onclick="toggleMenu()">
-☰
-</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 <ul class="nav-links" id="navLinks">
 
@@ -686,7 +593,7 @@ Syed<span>Ibrahim</span>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#education">Education</a></li>
-<li><a href="#certificate">Certificate</a></li>
+<li><a href="#certificate">Certificates</a></li>
 <li><a href="#contact">Contact</a></li>
 
 </ul>
@@ -697,7 +604,7 @@ Syed<span>Ibrahim</span>
 
 
 <!-- =========================
-     HERO
+     HOME
 ========================= -->
 
 <section id="home">
@@ -730,13 +637,11 @@ MySQL and MongoDB.
 🚀 View Projects
 </a>
 
-<a href="mailto:hasanibrahim48845@gmail.com"
-class="btn">
+<a href="mailto:hasanibrahim48845@gmail.com" class="btn">
 📧 Email Me
 </a>
 
-<a href="tel:+916200998924"
-class="btn">
+<a href="tel:+916200998924" class="btn">
 📱 Call Me
 </a>
 
@@ -750,16 +655,7 @@ class="btn">
 
 </div>
 
-
 <div class="profile-photo">
-
-<!--
-     IMPORTANT:
-     Replace "profile.jpg" with your photo file name.
-
-     Example:
-     <img src="myphoto.jpg">
--->
 
 <img
 src="whatsapp.jpg"
@@ -808,7 +704,6 @@ Java, Spring Boot, React.js, Node.js, MySQL and MongoDB.
 
 </p>
 
-
 <div class="info-grid">
 
 <div class="info-box">
@@ -834,7 +729,6 @@ Java, Spring Boot, React.js, Node.js, MySQL and MongoDB.
 </div>
 
 </div>
-
 
 <div class="card">
 
@@ -881,80 +775,60 @@ My Skills
 <div class="card">
 
 <h3>Frontend</h3>
-
 <br>
 
 <div class="skills">
-
 <span class="skill">HTML</span>
 <span class="skill">CSS</span>
 <span class="skill">JavaScript</span>
 <span class="skill">React.js</span>
 <span class="skill">Bootstrap</span>
 <span class="skill">Tailwind CSS</span>
-
 </div>
 
 <br>
 
-
 <h3>Backend</h3>
-
 <br>
 
 <div class="skills">
-
 <span class="skill">Java</span>
 <span class="skill">Spring Boot</span>
 <span class="skill">Node.js</span>
-
 </div>
 
 <br>
-
 
 <h3>Database</h3>
-
 <br>
 
 <div class="skills">
-
 <span class="skill">MySQL</span>
 <span class="skill">MongoDB</span>
-
 </div>
 
 <br>
 
-
 <h3>Programming Languages</h3>
-
 <br>
 
 <div class="skills">
-
 <span class="skill">C</span>
 <span class="skill">Java</span>
 <span class="skill">JavaScript</span>
-
 </div>
 
 <br>
 
-
 <h3>Tools</h3>
-
 <br>
 
 <div class="skills">
-
 <span class="skill">Git</span>
 <span class="skill">GitHub</span>
 <span class="skill">VS Code</span>
 <span class="skill">IntelliJ IDEA</span>
-<span class="skill">Atom</span>
 <span class="skill">Figma</span>
-
 </div>
 
 </div>
@@ -989,7 +863,7 @@ Full Stack Developer
 </h3>
 
 <h4>
-Prime Zine Technology
+Prime Zone Technology
 </h4>
 
 <p class="muted">
@@ -1061,11 +935,9 @@ onkeyup="searchProjects()"
 
 </div>
 
-
-<div class="projects" id="projectList">
-
-<!-- PROJECTS WILL LOAD USING JAVASCRIPT -->
-
+<div
+class="projects"
+id="projectList">
 </div>
 
 </div>
@@ -1100,29 +972,21 @@ B.Tech – Computer Science Engineering (CSE)
 <br>
 
 <p class="muted">
-
 Ganga Institute of Technology and Management,
 Kablana, Jhajjar, Haryana
-
 </p>
 
 <p class="muted">
-
 Affiliated to MDU University, Rohtak
-
 </p>
 
 <p class="muted">
-
 18 August 2023 – June 2027
-
 </p>
 
 <br>
 
-<b>
-CGPA: 8.00
-</b>
+<b>CGPA: 8.00</b>
 
 </div>
 
@@ -1136,22 +1000,16 @@ Intermediate of Science (PCM)
 <br>
 
 <p class="muted">
-
 Mirza Ghalib College, Gaya
-
 </p>
 
 <p class="muted">
-
 April 2018 – 2020
-
 </p>
 
 <br>
 
-<b>
-Grade: 75%
-</b>
+<b>Grade: 75%</b>
 
 </div>
 
@@ -1162,9 +1020,9 @@ Grade: 75%
 </section>
 
 
-<!-- =========================
-     CERTIFICATE
-========================= -->
+<!-- ==================================================
+     CERTIFICATES
+================================================== -->
 
 <section id="certificate">
 
@@ -1175,28 +1033,29 @@ Certification
 </div>
 
 <h2>
-Cyber Security Certificate
+My Certificates
 </h2>
+
+
+<!-- CYBER SECURITY -->
 
 <div class="certificate-box">
 
 <div class="certificate-placeholder">
 
-<h1>🏆</h1>
+<h1>🛡️</h1>
 
 <h3>
 Cyber Security
 </h3>
 
 <p>
-Certificate
+Training Certificate
 </p>
 
 <br>
 
 <p>
-Training Period:
-<br>
 March 2025 – May 2025
 </p>
 
@@ -1212,35 +1071,269 @@ Cyber Security Course
 <br>
 
 <p class="muted">
-
 Successfully completed Cyber Security training.
+</p>
+
+<br>
+
+<p class="muted">
+
+<strong>Training Period:</strong>
+<br>
+
+March 2025 – May 2025
 
 </p>
 
 <br>
 
 <p class="muted">
-Certificate ID: GITAM CSE 075
+
+<strong>Certificate ID:</strong>
+GITAM CSE 075
+
 </p>
 
 <br>
 
-<!--
-Put your certificate PDF in the same folder
-and name it:
-
-Cyber Security.pdf
--->
-
 <a
 href="Cyber Security.pdf"
 target="_blank"
-class="btn primary"
->
-📄 Open Certificate
+rel="noopener"
+class="btn primary">
+
+📄 View Certificate
+
+</a>
+
+<a
+href="Cyber Security.pdf"
+download
+class="btn">
+
+⬇️ Download
+
 </a>
 
 </div>
+
+</div>
+
+
+<!-- IOT AI -->
+
+<div class="certificate-box">
+
+<div class="certificate-placeholder">
+
+<h1>🤖</h1>
+
+<h3>
+IoT & Artificial Intelligence
+</h3>
+
+<p>
+Certificate of Training
+</p>
+
+<br>
+
+<p>
+22 July 2025 – 03 December 2025
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+IoT & Artificial Intelligence Training
+</h3>
+
+<br>
+
+<p class="muted">
+
+Successfully completed a Project Based Training
+Program at Ganga Institute of Technology &
+Management.
+
+</p>
+
+<br>
+
+<p class="muted">
+
+<strong>Name:</strong>
+Ibrahim
+
+<br>
+
+<strong>Roll No:</strong>
+23CSE075
+
+</p>
+
+<br>
+
+<p class="muted">
+
+<strong>Training Period:</strong>
+
+<br>
+
+22 July 2025 – 03 December 2025
+
+</p>
+
+<br>
+
+<p class="muted">
+
+<strong>Training Modules:</strong>
+
+<br><br>
+
+✓ Fundamentals of IoT Development
+
+<br>
+
+✓ Industrial Communication Protocol and Connectivity
+
+<br>
+
+✓ Data Analytics for IoT
+
+<br>
+
+✓ Machine Learning from Idea to Implementation
+
+<br>
+
+✓ Deep Learning with Computer Vision
+
+<br>
+
+✓ Artificial Intelligence Principles & Practices
+
+</p>
+
+<br>
+
+<a
+href="iot-training-certificate.png"
+target="_blank"
+rel="noopener"
+class="btn primary">
+
+📄 View Certificate
+
+</a>
+
+<a
+href="iot-training-certificate.png"
+download
+class="btn">
+
+⬇️ Download
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- LENDBOX INTERNSHIP -->
+
+<div class="certificate-box">
+
+    <div class="certificate-placeholder">
+
+        <h1>💼</h1>
+
+        <h3>Internship Certificate</h3>
+
+        <p>Lendbox – Faridabad</p>
+
+        <br>
+
+        <p>January 2026</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>One Month Internship</h3>
+
+        <br>
+
+        <p class="muted">
+            Successfully completed a one-month internship at
+            <strong>Lendbox, Faridabad</strong>.
+        </p>
+
+        <br>
+
+        <p class="muted">
+
+            <strong>Company:</strong>
+            Lendbox
+
+            <br>
+
+            <strong>Location:</strong>
+            Faridabad, Haryana
+
+            <br>
+
+            <strong>Duration:</strong>
+            One Month
+
+            <br>
+
+            <strong>Date:</strong>
+            January 2026
+
+        </p>
+
+        <br>
+
+        <a
+            href="LendboxCertificate.png"
+            target="_blank"
+            rel="noopener"
+            class="btn primary">
+            📄 View Internship Certificate
+        </a>
+
+        <a
+            href="LendboxCertificate.png"
+            download
+            class="btn">
+            ⬇️ Download
+        </a>
+
+    </div>
+
+</div>
+<div class="card certificate-note">
+
+<p class="muted">
+
+<strong>Important for GitHub Pages:</strong>
+
+Keep these certificate files in the same folder as
+<code>index.html</code>.
+
+<br><br>
+
+Cyber Security.pdf |
+iot-training-certificate.png |
+Lendbox-Internship-Certificate.pdf
+
+</p>
 
 </div>
 
@@ -1271,43 +1364,47 @@ Let's Connect
 
 <a
 class="contact-link"
-href="mailto:hasanibrahim48845@gmail.com"
->
+href="mailto:hasanibrahim48845@gmail.com">
+
 📧 Email:
 <br>
 hasanibrahim48845@gmail.com
+
 </a>
 
 
 <a
 class="contact-link"
-href="tel:+916200998924"
->
+href="tel:+916200998924">
+
 📱 Mobile:
 <br>
 +91 6200998924
+
 </a>
 
 
 <a
 class="contact-link"
 href="https://github.com/SyedIbrahim8248"
-target="_blank"
->
+target="_blank">
+
 💻 GitHub:
 <br>
 SyedIbrahim8248
+
 </a>
 
 
 <a
 class="contact-link"
 href="https://www.linkedin.com/"
-target="_blank"
->
+target="_blank">
+
 🔗 LinkedIn:
 <br>
 Add your LinkedIn profile
+
 </a>
 
 </div>
@@ -1322,36 +1419,29 @@ Available For
 <br>
 
 <p class="muted">
-
 Java Developer
-
 </p>
 
 <p class="muted">
-
 Java Full Stack Developer
-
 </p>
 
 <p class="muted">
-
 Software Engineer
-
 </p>
 
 <p class="muted">
-
 Full Stack Developer
-
 </p>
 
 <br>
 
 <a
 href="mailto:hasanibrahim48845@gmail.com?subject=Job Opportunity"
-class="btn primary"
->
+class="btn primary">
+
 📩 Contact Me
+
 </a>
 
 </div>
@@ -1382,7 +1472,9 @@ Java Full Stack Developer
      PROJECT MODAL
 ========================= -->
 
-<div class="modal" id="modal">
+<div
+class="modal"
+id="modal">
 
 <div class="modal-box">
 
@@ -1394,25 +1486,21 @@ Project
 
 <button
 class="close"
-onclick="closeModal()"
->
+onclick="closeModal()">
+
 ✕
+
 </button>
 
 </div>
 
 <div id="modalContent">
-
 </div>
 
 </div>
 
 </div>
 
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
 
 <script>
 
@@ -1422,16 +1510,16 @@ onclick="closeModal()"
 
 function toggleMenu(){
 
-    document
-    .getElementById("navLinks")
-    .classList
-    .toggle("active");
+document
+.getElementById("navLinks")
+.classList
+.toggle("active");
 
 }
 
 
 /* =========================
-   PROJECT DATA
+   PROJECTS
 ========================= */
 
 const projects = [
@@ -1439,16 +1527,14 @@ const projects = [
 {
 icon:"🏧",
 name:"ATM Machine",
-description:
-"ATM simulation with PIN login, balance, withdraw, deposit, fast cash and mini statement.",
+description:"ATM simulation with PIN login, balance, withdraw and deposit.",
 type:"atm"
 },
 
 {
 icon:"❌",
 name:"Tic Tac Toe",
-description:
-"Interactive two-player Tic Tac Toe game.",
+description:"Interactive two-player Tic Tac Toe game.",
 type:"tictactoe",
 link:"https://syedibrahim8248.github.io/TicTacToe/"
 },
@@ -1456,64 +1542,56 @@ link:"https://syedibrahim8248.github.io/TicTacToe/"
 {
 icon:"📖",
 name:"Dictionary",
-description:
-"Dictionary application for searching word meanings.",
+description:"Dictionary application for searching word meanings.",
 type:"dictionary"
 },
 
 {
 icon:"🏍️",
 name:"Bike Racing Game",
-description:
-"Browser-based bike racing game.",
+description:"Browser-based bike racing game.",
 type:"bike"
 },
 
 {
 icon:"🧮",
 name:"Calculator",
-description:
-"Simple responsive calculator.",
+description:"Simple responsive calculator.",
 type:"calculator"
 },
 
 {
 icon:"🛒",
 name:"Amazon Clone",
-description:
-"Amazon-style e-commerce interface.",
+description:"Amazon-style e-commerce interface.",
 type:"none"
 },
 
 {
 icon:"🛍️",
 name:"Flipkart Clone",
-description:
-"Flipkart-style shopping website with product search and cart.",
+description:"Flipkart-style shopping website.",
 type:"flipkart"
 },
 
 {
 icon:"💬",
 name:"Chat Application",
-description:
-"Chat application project.",
+description:"Chat application project.",
 type:"none"
 },
 
 {
 icon:"🔌",
 name:"Flip-Flop Demo",
-description:
-"Digital electronics flip-flop demonstration.",
+description:"Digital electronics flip-flop demonstration.",
 type:"none"
 },
 
 {
 icon:"📚",
 name:"Book Store",
-description:
-"Online Book Store web project.",
+description:"Online Book Store web project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/Book-Store/"
 },
@@ -1521,8 +1599,7 @@ link:"https://syedibrahim8248.github.io/Book-Store/"
 {
 icon:"🏦",
 name:"Banking Management System",
-description:
-"Banking management web project.",
+description:"Banking management web project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/BankingManagementsystem/"
 },
@@ -1530,8 +1607,7 @@ link:"https://syedibrahim8248.github.io/BankingManagementsystem/"
 {
 icon:"🏥",
 name:"Hospital Management System",
-description:
-"Hospital management web project.",
+description:"Hospital management web project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/HospitalManagementSystem/"
 },
@@ -1539,8 +1615,7 @@ link:"https://syedibrahim8248.github.io/HospitalManagementSystem/"
 {
 icon:"💼",
 name:"Job Portal",
-description:
-"Job portal web project.",
+description:"Job portal web project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/JobPortal/"
 },
@@ -1548,8 +1623,7 @@ link:"https://syedibrahim8248.github.io/JobPortal/"
 {
 icon:"📚",
 name:"Online Library",
-description:
-"Online library management project.",
+description:"Online library management project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/OnlineLibrary/"
 },
@@ -1557,8 +1631,7 @@ link:"https://syedibrahim8248.github.io/OnlineLibrary/"
 {
 icon:"🎓",
 name:"Student Management System",
-description:
-"Student management system.",
+description:"Student management system.",
 type:"none",
 link:"https://syedibrahim8248.github.io/StudentManagementSystem/"
 },
@@ -1566,8 +1639,7 @@ link:"https://syedibrahim8248.github.io/StudentManagementSystem/"
 {
 icon:"✈️",
 name:"Travel Tourism Management",
-description:
-"Travel and tourism management project.",
+description:"Travel and tourism management project.",
 type:"none",
 link:"https://syedibrahim8248.github.io/TraveltourismManagement/"
 },
@@ -1575,8 +1647,7 @@ link:"https://syedibrahim8248.github.io/TraveltourismManagement/"
 {
 icon:"💱",
 name:"Currency Converter",
-description:
-"Currency converter web application.",
+description:"Currency converter web application.",
 type:"none",
 link:"https://syedibrahim8248.github.io/CurrencyConverter/"
 }
@@ -1588,111 +1659,117 @@ link:"https://syedibrahim8248.github.io/CurrencyConverter/"
    DISPLAY PROJECTS
 ========================= */
 
-function displayProjects(list = projects){
+function displayProjects(list=projects){
 
-    const box =
-    document.getElementById("projectList");
+const box =
+document.getElementById("projectList");
 
-    box.innerHTML = "";
+box.innerHTML="";
 
-    list.forEach((project,index)=>{
+list.forEach(project=>{
 
-        let button = "";
+let button="";
 
-        if(project.link){
+if(project.link){
 
-            button = `
-            <a
-            href="${project.link}"
-            target="_blank"
-            class="btn primary"
-            >
-            ▶ Live Demo
-            </a>
-            `;
+button=`
 
-        }
+<a
+href="${project.link}"
+target="_blank"
+class="btn primary">
 
-        else if(project.type !== "none"){
+▶ Live Demo
 
-            button = `
-            <button
-            class="btn primary"
-            onclick="runProject('${project.type}')"
-            >
-            ▶ Run Demo
-            </button>
-            `;
+</a>
 
-        }
+`;
 
-        else{
+}
 
-            button = `
-            <button
-            class="btn"
-            onclick="alert('Add your live GitHub Pages link for this project.')"
-            >
-            🔗 Add Link
-            </button>
-            `;
+else if(project.type!=="none"){
 
-        }
+button=`
+
+<button
+class="btn primary"
+onclick="runProject('${project.type}')">
+
+▶ Run Demo
+
+</button>
+
+`;
+
+}
+
+else{
+
+button=`
+
+<a
+href="https://github.com/SyedIbrahim8248"
+target="_blank"
+class="btn">
+
+💻 GitHub
+
+</a>
+
+`;
+
+}
 
 
-        box.innerHTML += `
+box.innerHTML+=`
 
-        <div
-        class="card project-card"
-        >
+<div class="card project-card">
 
-        <div class="project-icon">
-        ${project.icon}
-        </div>
+<div class="project-icon">
+${project.icon}
+</div>
 
-        <h3>
-        ${project.name}
-        </h3>
+<h3>
+${project.name}
+</h3>
 
-        <p>
-        ${project.description}
-        </p>
+<p>
+${project.description}
+</p>
 
-        <div class="project-buttons">
+<div class="project-buttons">
+${button}
+</div>
 
-        ${button}
+</div>
 
-        </div>
+`;
 
-        </div>
-
-        `;
-
-    });
+});
 
 }
 
 
 /* =========================
-   PROJECT SEARCH
+   SEARCH PROJECTS
 ========================= */
 
 function searchProjects(){
 
-    const value =
-    document
-    .getElementById("projectSearch")
-    .value
-    .toLowerCase();
+const value =
+document
+.getElementById("projectSearch")
+.value
+.toLowerCase();
 
-    const filtered =
-    projects.filter(project =>
-        project.name
-        .toLowerCase()
-        .includes(value)
-    );
+const filtered =
+projects.filter(project =>
+project.name
+.toLowerCase()
+.includes(value)
+);
 
-    displayProjects(filtered);
+displayProjects(filtered);
 
 }
 
@@ -1703,26 +1780,26 @@ function searchProjects(){
 
 function openModal(title,html){
 
-    document
-    .getElementById("modalTitle")
-    .innerText = title;
+document
+.getElementById("modalTitle")
+.innerText=title;
 
-    document
-    .getElementById("modalContent")
-    .innerHTML = html;
+document
+.getElementById("modalContent")
+.innerHTML=html;
 
-    document
-    .getElementById("modal")
-    .style.display = "flex";
+document
+.getElementById("modal")
+.style.display="flex";
 
 }
 
 
 function closeModal(){
 
-    document
-    .getElementById("modal")
-    .style.display = "none";
+document
+.getElementById("modal")
+.style.display="none";
 
 }
 
@@ -1733,43 +1810,42 @@ function closeModal(){
 
 function runProject(type){
 
-    if(type === "atm"){
-        atmDemo();
-    }
+if(type==="atm"){
+atmDemo();
+}
 
-    else if(type === "tictactoe"){
-        ticTacToeDemo();
-    }
+else if(type==="tictactoe"){
+ticTacToeDemo();
+}
 
-    else if(type === "dictionary"){
-        dictionaryDemo();
-    }
+else if(type==="dictionary"){
+dictionaryDemo();
+}
 
-    else if(type === "calculator"){
-        calculatorDemo();
-    }
+else if(type==="calculator"){
+calculatorDemo();
+}
 
-    else if(type === "flipkart"){
-        flipkartDemo();
-    }
+else if(type==="flipkart"){
+flipkartDemo();
+}
 
-    else if(type === "bike"){
-        bikeDemo();
-    }
+else if(type==="bike"){
+bikeDemo();
+}
 
 }
 
 
 /* =========================
-   ATM DEMO
+   ATM
 ========================= */
 
-let balance = 5000;
+let balance=5000;
 
 function atmDemo(){
 
 openModal(
-
 "ATM Machine",
 
 `
@@ -1796,8 +1872,7 @@ Login
 
 <div
 id="atmMenu"
-style="display:none;margin-top:15px;"
->
+style="display:none">
 
 <button onclick="showBalance()">
 Balance
@@ -1811,17 +1886,11 @@ Withdraw
 Deposit
 </button>
 
-<button onclick="atmLogout()">
-Logout
-</button>
-
 </div>
 
 </div>
 
-`
-
-);
+`);
 
 }
 
@@ -1831,23 +1900,20 @@ function atmLogin(){
 const pin =
 document.getElementById("atmPin").value;
 
-if(pin === "1234"){
+if(pin==="1234"){
 
 document.getElementById("atmMessage")
-.innerText =
-"Login Successful!";
+.innerText="Login Successful";
 
 document.getElementById("atmMenu")
-.style.display =
-"block";
+.style.display="block";
 
 }
 
 else{
 
 document.getElementById("atmMessage")
-.innerText =
-"Invalid PIN!";
+.innerText="Invalid PIN";
 
 }
 
@@ -1858,7 +1924,7 @@ function showBalance(){
 
 document.getElementById("atmMessage")
 .innerText =
-"Current Balance: ₹" + balance;
+"Current Balance: ₹"+balance;
 
 }
 
@@ -1870,16 +1936,14 @@ parseInt(
 prompt("Enter withdrawal amount")
 );
 
-if(amount > 0 && amount <= balance){
+if(amount>0 && amount<=balance){
 
-balance -= amount;
+balance-=amount;
 
 document.getElementById("atmMessage")
 .innerText =
-"Withdrawn ₹" +
-amount +
-" | Balance ₹" +
-balance;
+"Withdrawn ₹"+amount+
+" | Balance ₹"+balance;
 
 }
 
@@ -1899,16 +1963,14 @@ parseInt(
 prompt("Enter deposit amount")
 );
 
-if(amount > 0){
+if(amount>0){
 
-balance += amount;
+balance+=amount;
 
 document.getElementById("atmMessage")
 .innerText =
-"Deposited ₹" +
-amount +
-" | Balance ₹" +
-balance;
+"Deposited ₹"+amount+
+" | Balance ₹"+balance;
 
 }
 
@@ -1921,48 +1983,24 @@ alert("Invalid amount");
 }
 
 
-function atmLogout(){
-
-document.getElementById("atmMenu")
-.style.display =
-"none";
-
-document.getElementById("atmMessage")
-.innerText =
-"Logged Out";
-
-}
-
-
 /* =========================
    TIC TAC TOE
 ========================= */
 
-let board = [];
-
-let currentPlayer = "X";
-
+let board=[];
+let currentPlayer="X";
 
 function ticTacToeDemo(){
 
-board =
-[
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-""
+board=[
+"","","",
+"","","",
+"","",""
 ];
 
-currentPlayer = "X";
-
+currentPlayer="X";
 
 openModal(
-
 "Tic Tac Toe",
 
 `
@@ -1971,24 +2009,22 @@ openModal(
 
 <div
 id="gameBoard"
-class="ttt-board"
->
+class="ttt-board">
 </div>
 
 <h3
 id="gameStatus"
-style="text-align:center"
->
+style="text-align:center">
+
 Player X Turn
+
 </h3>
 
 <br>
 
 <div style="text-align:center">
 
-<button
-onclick="resetGame()"
->
+<button onclick="resetGame()">
 New Game
 </button>
 
@@ -1996,9 +2032,7 @@ New Game
 
 </div>
 
-`
-
-);
+`);
 
 renderGame();
 
@@ -2010,16 +2044,17 @@ function renderGame(){
 const box =
 document.getElementById("gameBoard");
 
-box.innerHTML = "";
+box.innerHTML="";
 
 board.forEach((value,index)=>{
 
-box.innerHTML += `
+box.innerHTML+=`
 
 <button
-onclick="makeMove(${index})"
->
+onclick="makeMove(${index})">
+
 ${value}
+
 </button>
 
 `;
@@ -2031,23 +2066,19 @@ ${value}
 
 function makeMove(index){
 
-if(board[index] !== ""){
+if(board[index]!==""){
 return;
 }
 
-board[index] =
-currentPlayer;
+board[index]=currentPlayer;
 
 renderGame();
 
 if(checkWinner()){
 
-document
-.getElementById("gameStatus")
-.innerText =
-"🎉 Player " +
-currentPlayer +
-" Wins!";
+document.getElementById("gameStatus")
+.innerText=
+"🎉 Player "+currentPlayer+" Wins!";
 
 return;
 
@@ -2055,33 +2086,26 @@ return;
 
 if(!board.includes("")){
 
-document
-.getElementById("gameStatus")
-.innerText =
-"Draw!";
+document.getElementById("gameStatus")
+.innerText="Draw!";
 
 return;
 
 }
 
 currentPlayer =
-currentPlayer === "X"
-? "O"
-: "X";
+currentPlayer==="X"?"O":"X";
 
-document
-.getElementById("gameStatus")
+document.getElementById("gameStatus")
 .innerText =
-"Player " +
-currentPlayer +
-" Turn";
+"Player "+currentPlayer+" Turn";
 
 }
 
 
 function checkWinner(){
 
-const combinations = [
+const combinations=[
 
 [0,1,2],
 [3,4,5],
@@ -2094,15 +2118,11 @@ const combinations = [
 
 ];
 
-return combinations.some(
-combination =>
+return combinations.some(c=>
 
-board[combination[0]] &&
-board[combination[0]] ===
-board[combination[1]] &&
-
-board[combination[1]] ===
-board[combination[2]]
+board[c[0]] &&
+board[c[0]]===board[c[1]] &&
+board[c[1]]===board[c[2]]
 
 );
 
@@ -2123,7 +2143,6 @@ ticTacToeDemo();
 function dictionaryDemo(){
 
 openModal(
-
 "Dictionary",
 
 `
@@ -2133,11 +2152,9 @@ openModal(
 <input
 id="dictionaryWord"
 placeholder="Enter word"
-/>
-
-<button
-onclick="searchDictionary()"
 >
+
+<button onclick="searchDictionary()">
 Search
 </button>
 
@@ -2145,16 +2162,15 @@ Search
 
 <p
 id="dictionaryResult"
-class="muted"
->
+class="muted">
+
 Enter a word.
+
 </p>
 
 </div>
 
-`
-
-);
+`);
 
 }
 
@@ -2167,10 +2183,10 @@ document
 .value
 .toLowerCase();
 
-const dictionary = {
+const dictionary={
 
 java:
-"Java is a high-level, object-oriented programming language.",
+"Java is a high-level object-oriented programming language.",
 
 html:
 "HTML is used to structure web pages.",
@@ -2179,7 +2195,7 @@ css:
 "CSS is used to style web pages.",
 
 javascript:
-"JavaScript is a programming language used to create interactive web pages.",
+"JavaScript is used to create interactive web pages.",
 
 developer:
 "A developer creates and maintains software applications."
@@ -2189,8 +2205,7 @@ developer:
 document
 .getElementById("dictionaryResult")
 .innerText =
-dictionary[word]
-||
+dictionary[word] ||
 "Word not found in demo dictionary.";
 
 }
@@ -2203,7 +2218,6 @@ dictionary[word]
 function calculatorDemo(){
 
 openModal(
-
 "Calculator",
 
 `
@@ -2214,8 +2228,6 @@ openModal(
 id="calculatorDisplay"
 readonly
 >
-
-<div>
 
 <button onclick="calc('7')">7</button>
 <button onclick="calc('8')">8</button>
@@ -2240,8 +2252,14 @@ readonly
 
 <button onclick="calc('0')">0</button>
 <button onclick="calc('.')">.</button>
-<button onclick="calculateResult()">=</button>
-<button onclick="calc('+')">+</button>
+
+<button onclick="calculateResult()">
+=
+</button>
+
+<button onclick="calc('+')">
++
+</button>
 
 <br>
 
@@ -2251,11 +2269,7 @@ Clear
 
 </div>
 
-</div>
-
-`
-
-);
+`);
 
 }
 
@@ -2264,7 +2278,7 @@ function calc(value){
 
 document
 .getElementById("calculatorDisplay")
-.value += value;
+.value+=value;
 
 }
 
@@ -2275,8 +2289,7 @@ try{
 
 document
 .getElementById("calculatorDisplay")
-.value =
-
+.value=
 eval(
 document
 .getElementById("calculatorDisplay")
@@ -2289,8 +2302,7 @@ catch{
 
 document
 .getElementById("calculatorDisplay")
-.value =
-"Error";
+.value="Error";
 
 }
 
@@ -2301,7 +2313,7 @@ function clearCalculator(){
 
 document
 .getElementById("calculatorDisplay")
-.value = "";
+.value="";
 
 }
 
@@ -2313,8 +2325,7 @@ document
 function flipkartDemo(){
 
 openModal(
-
-"Flipkart Clone Demo",
+"Flipkart Clone",
 
 `
 
@@ -2327,21 +2338,18 @@ onkeyup="searchShop()"
 >
 
 <div id="shopProducts">
-
 </div>
 
 </div>
 
-`
-
-);
+`);
 
 showProducts();
 
 }
 
 
-const shopProducts = [
+const shopProducts=[
 
 ["📱","iPhone 15","₹79,999"],
 ["💻","Laptop","₹55,000"],
@@ -2356,14 +2364,13 @@ const shopProducts = [
 function showProducts(list=shopProducts){
 
 const box =
-document
-.getElementById("shopProducts");
+document.getElementById("shopProducts");
 
-box.innerHTML = "";
+box.innerHTML="";
 
 list.forEach(product=>{
 
-box.innerHTML += `
+box.innerHTML+=`
 
 <div
 style="
@@ -2371,8 +2378,7 @@ background:#12253b;
 padding:12px;
 margin:8px 0;
 border-radius:9px;
-"
->
+">
 
 <b>
 ${product[0]}
@@ -2386,9 +2392,10 @@ ${product[2]}
 </span>
 
 <button
-onclick="alert('${product[1]} added to cart')"
->
+onclick="alert('${product[1]} added to cart')">
+
 Add to Cart
+
 </button>
 
 </div>
@@ -2409,7 +2416,7 @@ document
 .toLowerCase();
 
 const result =
-shopProducts.filter(product =>
+shopProducts.filter(product=>
 product[1]
 .toLowerCase()
 .includes(search)
@@ -2421,13 +2428,12 @@ showProducts(result);
 
 
 /* =========================
-   BIKE DEMO
+   BIKE GAME DEMO
 ========================= */
 
 function bikeDemo(){
 
 openModal(
-
 "Bike Racing Game",
 
 `
@@ -2438,60 +2444,38 @@ openModal(
 🏍️ Bike Racing Game
 </h3>
 
+<br>
+
 <p>
-Use keyboard ← and → to move.
+This is your bike racing project demo.
 </p>
 
+<br>
+
 <div
-id="bikeRoad"
 style="
-height:350px;
+height:300px;
 background:#333;
-position:relative;
-overflow:hidden;
 border-radius:10px;
-margin-top:15px;
-"
->
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:70px;
+">
 
-<div
-id="playerBike"
-style="
-position:absolute;
-bottom:20px;
-left:48%;
-width:35px;
-height:65px;
-background:#00d9ff;
-border-radius:10px;
-"
->
+🏍️
+
 </div>
 
 </div>
 
-<p id="bikeScore">
-Score: 0
-</p>
-
-</div>
-
-`
-
-);
+`);
 
 }
 
 
 /* =========================
-   INITIALIZE
-========================= */
-
-displayProjects();
-
-
-/* =========================
-   CLOSE MODAL
+   MODAL OUTSIDE CLICK
 ========================= */
 
 document
@@ -2500,7 +2484,7 @@ document
 "click",
 function(event){
 
-if(event.target === this){
+if(event.target===this){
 
 closeModal();
 
@@ -2509,7 +2493,14 @@ closeModal();
 });
 
 
+/* =========================
+   START
+========================= */
+
+displayProjects();
+
 </script>
 
 </body>
 </html>
+```
